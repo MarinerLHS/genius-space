@@ -3,7 +3,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/poppins-v20-latin-git300.woff2') format('woff2');
+  src: url('/fonts/poppins-v20-latin-300.woff2') format('woff2');
 
 }
 
@@ -12,7 +12,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+  src: url('/fonts/poppins-v20-latin-regular.woff2') format('woff2');
 
 }
 
@@ -21,7 +21,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+  src: url('/fonts/poppins-v20-latin-600.woff2') format('woff2');
 
 }
 
@@ -30,8 +30,12 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+  src: url('/fonts/poppins-v20-latin-900.woff2') format('woff2');
 
+}
+
+* {
+  box-sizing: border-box;
 }
 
 :root {
@@ -48,6 +52,30 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0pxs;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+}
+
+.section {
+  padding: 48px 0px;
 }
 
 address {
@@ -58,8 +86,16 @@ ul {
   list-style-type: none;
 }
 
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* button section */
 .button {
+  padding: 16px 32px;
   border: 2px solid var(--color-brand-light);
   background-color: var(--color-brand-light);
   color: var(--color-primary-light);
@@ -73,7 +109,12 @@ ul {
   color: var(--color-brand-dark);
 }
 
-/* link section */
+/* link section header */
+.our-traditions {
+  color: var(--color-brand-light);
+  font-weight: 600;
+}
+
 .link {
   color: var(--color-primary-light);
 
@@ -85,11 +126,17 @@ ul {
 }
 
 /* hero section */
+.hero-section {
+  padding: 272px 0px;
+
+}
+
 .hero-title {
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
   font-weight: 900;
+  margin-bottom: 0px;
 }
 
 .hero-title .accent {
@@ -97,6 +144,8 @@ ul {
 }
 
 /* advantages section */
+.advantages {}
+
 .advantages-list {
   background-color: var(--color-brand-light);
   color: var(--color-primary-light);
@@ -114,11 +163,23 @@ ul {
 }
 
 /* section */
+
+
 .section-title .accent {
   color: var(--color-primary-dark);
 }
 
+
+
 /* traditions section */
+.tradition-title {
+  margin-bottom: 42px;
+}
+
+.tradition-section {
+  padding-top: 96px;
+}
+
 .traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
@@ -128,13 +189,24 @@ ul {
   text-transform: uppercase;
 }
 
-/* cooker section*/
-.cooker-title {
+/* chefs section*/
+.chefs-title {
+  margin-bottom: 80px;
+}
+
+.chef-title {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
 }
 
+
+
 /* format section*/
+.formats-title {
+  margin-bottom: 80px;
+}
+
 .format-title {
   font-size: 24px;
   font-weight: 600;
@@ -143,6 +215,12 @@ ul {
 .format-text {
   font-size: 14px;
   font-weight: 300;
+}
+
+/* contact section */
+
+.contact-title {
+  margin-bottom: 16px;
 }
 
 /* footer */
