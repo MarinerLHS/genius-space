@@ -1,0 +1,34 @@
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;
+
+@import './base';
+/*components*/
+@import './components/input';
+@import './components/buttons';
+@import './components/links';
+@import './components/carousel-button';
+@import './components/chef-card';
+@import './components/format-card';
+
+/*layouts */
+@import './layouts/container';
+@import './layouts/section';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/mobile-menu';
+@import './layouts/chefs-section';
+@import './layouts/advantages-section';
+@import './layouts/traditions-section';
+@import './layouts/formats-section';
+@import './layouts/contact-section';
+@import './layouts/footer';
+@import './layouts/modal';
+@import './layouts/form-terms';
+
+/*utils*/
+@import './utils/texts';
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/utils';
+@import './utils/mixins';
